@@ -1,13 +1,12 @@
 {% set name = "flet-runtime" %}
-{% set version = "0.21.0" %}
-
+{% set version = "0.21.1" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flet_runtime-{{ version }}.tar.gz
-  sha256: 9e9382270716cf8a7efe5ef25db5cf5eb2f7a75d847ebe0129c4dfac123e86e3
+  sha256: e3c7624cc4d66e264d1788d4e80060598b1d84d36cddbb5eedbae0744244ddeb
 
 build:
   noarch: python
@@ -16,15 +15,14 @@ build:
 
 requirements:
   host:
-    - python >=3.7,<4.0
+    - python >=3.8,<4.0
     - poetry-core
     - pip
   run:
-    - python >=3.7,<4.0
+    - python >=3.8,<4.0
     - flet-core =={{ version }}
     - oauthlib >=3.2.2,<4.0.0
-    - httpx >=0.24.1,<0.25.0
-    - typing-extensions >=4.6.2,<5.0.0
+    - httpx >=0.0.0,<1.0.0
 
 test:
   imports:
