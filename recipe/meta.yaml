@@ -16,15 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.7,<4.0
+    - python >=3.8,<4.0
     - poetry-core
     - pip
   run:
-    - python >=3.7,<4.0
+    - python >=3.8,<4.0
     - flet-core =={{ version }}
     - oauthlib >=3.2.2,<4.0.0
-    - httpx >=0.24.1,<0.25.0
-    - typing-extensions >=4.6.2,<5.0.0
+    - httpx >=0.0.0,<1.0.0
 
 test:
   imports:
