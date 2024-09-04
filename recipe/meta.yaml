@@ -1,12 +1,12 @@
 {% set name = "flet-runtime" %}
-{% set version = "0.24.0" %}
+{% set version = "0.24.1" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flet_runtime-{{ version }}.tar.gz
-  sha256: 5439a2c7e747495fae2ce2f78cf3dddb378f4545c1f453b8c6a27dc3f6b19d39
+  sha256: 88fbf916b66a84ca04e5e2e300b9d5d1701642ef3d0fd86aae3eaa6b91e9daeb
 
 build:
   noarch: python
